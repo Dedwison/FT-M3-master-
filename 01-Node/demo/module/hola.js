@@ -1,7 +1,7 @@
-//console.log('Hola!');
+// console.log("Hola!");
 
-var saludar = function() {
-	console.log('Hola!!!');
-}
-//saludar();
+var saludar = function () {
+  console.log("Hola!!!");
+};
+// saludar();
 module.exports = saludar;

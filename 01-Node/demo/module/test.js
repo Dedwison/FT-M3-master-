@@ -1,17 +1,15 @@
+var gon = require("./prueba.js");
+var fs = require("fs");
 
-var gon = require('./prueba.js');
-var fs = require('fs');
-
-
-var archivo = fs.readFileSync('./prueba.js', 'utf-8');
+var archivo = fs.readFileSync("./prueba.js", "utf-8");
 
 console.log(archivo);
 
-fs.readFile('./pruesadsadsaba.js', 'utf-8', function(err, data) {
-  if(err) {
+/* fs.readFile("./pruesadsadsaba.js", "utf-8", function (err, data) {
+  if (err) {
     return console.error(err);
   }
   console.log(data);
-}); // callback
+}); // callback */
 
-console.log('termine');
+console.log("termine");
