@@ -4,6 +4,7 @@ const request = require("request");
 module.exports = {
   pwd: function (args, done) {
     done(process.cwd());
+    // done(process.mainModule.path); DEPRECADO
   },
   date: function (args, done) {
     done(Date());
@@ -21,7 +22,7 @@ module.exports = {
     });
   },
   echo: function (args, done) {
-    done(args.join(" "));
+    done(args.join(" ")); // se podria usar un rest operator
   },
   cat: function (file, done) {
     fs.readFile(file[0], "utf8", function (err, data) {
